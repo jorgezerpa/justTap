@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:990px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+.form, .banner {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form form {
+    min-width: 250px;
+    max-width: 450px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form form h3 {
+    color: #181c32;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.form form p {
+    color: #a1a5b7;
+    font-size: .95rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form form input {
+    display: inline-block;
+    color: #181c32;
+    width: 100%;
+    outline: none;
+    border: 1px solid #dcdde4;
+    font-size: .9rem;
+    padding: 12px 13px;
+    border-radius: 5px;
+    /* margin-bottom: 40px; */
+}
+.nameInput{
+    margin-bottom: 40px;
+}
+
+.form form button {
+    display: inline-block;
+    color: white;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #009ef7;
+    font-size: .95rem;
+    font-weight: bold;
+    padding: 13px 13px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.form form .forgotPassword_container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+}
+.form form .forgotPassword_container label{
+    color: #009ef7;
+    margin-bottom: 40px;
+}
+
+.banner {
+    background: #222;
+}
