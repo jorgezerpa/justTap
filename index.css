@@ -6,6 +6,7 @@
 }
 
 .container {
+    position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -27,11 +28,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .form form {
     min-width: 250px;
     max-width: 450px;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,14 +41,16 @@
 }
 .form form h3 {
     color: #181c32;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 .form form p {
     color: #a1a5b7;
-    font-size: .95rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-size: .90rem;
+    word-spacing: .1rem;
+    letter-spacing: .01rem;
+    font-weight: bold;
+    margin-bottom: 35px;
 }
 
 .form form input {
@@ -60,8 +64,12 @@
     border-radius: 5px;
     /* margin-bottom: 40px; */
 }
+.form input::placeholder{
+    font-weight: bold;
+    color: #a1a5b7;
+}
 .nameInput{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .form form button {
@@ -77,6 +85,9 @@
     border-radius: 5px;
     margin-bottom: 40px;
 }
+.form form button:hover {
+    background-color: #088dda;
+}
 
 .form form .forgotPassword_container{
     display: flex;
@@ -87,7 +98,20 @@
 }
 .form form .forgotPassword_container label{
     color: #009ef7;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.support{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .9rem;
+    color: #009ef7;
+    display: block;
+    text-decoration: none;
 }
 
 .banner {

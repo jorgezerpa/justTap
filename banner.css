@@ -6,10 +6,31 @@
 }
 
 .banner {
+    padding: 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    background-image: url(https://justap.io/justap/media/misc/auth-bg-new.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .banner img {
     width: 105px;
+}
+.banner h3 {
+    color: white;
+    font-size: 1.8rem;
+    width: 80%;
+    text-align: center;
+}
+
+.banner p {
+    text-align: center;
+    color: white;
+    font-size: .9rem;
+    width: 80%;
+    line-height: 1.3rem;
 }
